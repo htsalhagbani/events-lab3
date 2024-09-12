@@ -1,5 +1,9 @@
 let stopButton=document.getElementById('stopButton');
 let stopLight=document.getElementById('stopLight');
+let goButton=document.getElementById('goButton');
+let goLight=document.getElementById('goLight');
+let slowButton=document.getElementById('slowButton');
+let slowLight=document.getElementById('slowLight');
 
 
 stopButton.addEventListener('click',()=>{
@@ -11,12 +15,11 @@ stopButton.addEventListener('click',()=>{
     
 })
 
-let slowButton=document.getElementById('slowButton');
-let slowLight=document.getElementById('slowLight');
+
 
 slowButton.addEventListener('click',()=>{
     slowLight.style.background = 'orange';
-    stopLight.style.background = 'balck';
+    stopLight.style.background = 'black';
     goLight.style.background = 'black';
 
 
@@ -25,8 +28,6 @@ slowButton.addEventListener('click',()=>{
 
 
 
-let goButton=document.getElementById('goButton');
-let goLight=document.getElementById('goLight');
 
 goButton.addEventListener('click',()=>{
     goLight.style.background = 'green';
